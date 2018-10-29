@@ -1,0 +1,55 @@
+/*INITIAL LEARNING*/
+.box{
+    width:100px;
+    height:100px;
+    background-color: #e84610;
+    transform:translate(100px,100px);
+}
+ol{
+    transform:translateY(200px);
+}
+li{
+    color:#000;
+    position:relative;
+}
+
+/* transform:skew(xdeg)
+transform:scale(1.5)
+transform:rotate(45deg)*/
+
+/*CHALLENGE ONE*/
+.image{
+    margin:50px;
+    transition:transform 1s ease;
+}
+.image:hover{
+    transform:scale(2);
+}
+
+/*CHALLENGE TWO*/
+@keyframes rotate{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+.imagetwo{
+    animation-name:rotate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; /*Use linear to get continuous rotation*/
+    animation-duration:1s;
+}
+/* You can shorten the css code to: animation: rotate 1s infinite linear;*/
+
+/*CHALLENGE THREE*/
+.element{
+    background-color: #0997d3;
+	width: 200px;
+	height: 200px;
+    transition:transform 1s ease-in-out;
+}
+.element:hover{
+    transform: translateX(100%);
+}
